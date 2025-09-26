@@ -12,7 +12,7 @@ import geminiResponse from "./gemini.js"
 
 const app = express()
 app.use(cors({
-  origin:"http://localhost:5173",
+  origin:"https://virtualassistant-frontend-lpqh.onrender.com",
   credentials:true
 }))
 // helo
@@ -30,5 +30,5 @@ app.listen(port,()=>{
 
 connectDb()
 
-  console.log("kaho  AI virtual bna do bhai")
+  console.log("port is running")
 })
