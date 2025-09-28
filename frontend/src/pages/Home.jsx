@@ -671,12 +671,21 @@ function Home() {
 
 
 
-      <div className="w-[360px] h-[350px] flex justify-center items-center overflow-hidden rounded-4xl shadow-lg">
+      {/* <div className="w-[360px] h-[350px] flex justify-center items-center overflow-hidden rounded-4xl shadow-lg">
         <img
           src={userData?.assistantImage}
           className="h-full object-cover rounded-2xl "
         />
-      </div>
+      </div> */}
+
+
+      <div className="w-[360px] h-[270px] sm:h-[300px] md:h-[350px] flex justify-center items-center overflow-hidden rounded-4xl shadow-lg">
+  <img
+    src={userData?.assistantImage}
+    className="h-full object-cover rounded-2xl"
+  />
+</div>
+
 
       <h1 className="text-white text-[28px] font-semibold">
         I'm <span className="text-[#ff0015]">{userData?.assistantName}</span>
@@ -684,9 +693,26 @@ function Home() {
 
 
 
-      {!aiText && <img src={userImg} className="w-[200px]" />}
+      /* {!aiText && <img src={userImg} className="w-[200px]" />}
 
-      {aiText && <img src={aiImg} className="w-[200px]" />}
+      {aiText && <img src={aiImg} className="w-[200px]" />} */
+
+
+
+      {!aiText && (
+  <img 
+    src={userImg} 
+    className="w-[100px] sm:w-[150px] md:w-[200px]" 
+  />
+)}
+
+{aiText && (
+  <img 
+    src={aiImg} 
+    className="w-[100px] sm:w-[150px] md:w-[200px]" 
+  />
+)}
+
 
       {/* <h1
         className={`text-[20px] ${
