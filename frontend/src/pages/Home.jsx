@@ -709,7 +709,7 @@ function Home() {
 
 
       <h1
-  className={`absolute inset-0 flex items-center justify-center 
+  className={`inset-0 flex items-center justify-center 
     text-xs sm:text-sm md:text-lg lg:text-2xl font-semibold z-50 
     ${userText ? "text-yellow-400" : aiText ? "text-red-500" : "text-[#00ffae]"}`}
 >
