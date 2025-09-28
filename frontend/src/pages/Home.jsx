@@ -693,9 +693,9 @@ function Home() {
 
 
 
-      /* {!aiText && <img src={userImg} className="w-[200px]" />}
+      {/* /* {!aiText && <img src={userImg} className="w-[200px]" />}
 
-      {aiText && <img src={aiImg} className="w-[200px]" />} */
+      {aiText && <img src={aiImg} className="w-[200px]" />} */ }
 
 
 
